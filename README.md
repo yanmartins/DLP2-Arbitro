@@ -1,2 +1,3 @@
-# DLP2-arbitro-de-prioridade-fixa
+# Árbitro de prioridade alternada de quatro requisições
+
 Projeto final de Dispositivos Lógicos Programáveis II
