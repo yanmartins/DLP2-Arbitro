@@ -29,7 +29,7 @@ begin
 	end process;
 	
 	-- next_state and output logic
-	process (state_reg, r)
+	process (state_reg, r, timeout)
 	begin
 		g <= "0000"; -- default values
 		case state_reg is
