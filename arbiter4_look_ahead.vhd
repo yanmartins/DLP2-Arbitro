@@ -118,7 +118,7 @@ begin
 	end process;
 	
 	-- look-ahead output logic
-	process (state_next, r)
+	process (state_next)
 	begin
 		g <= "0000"; -- default values
 		
