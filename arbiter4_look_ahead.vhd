@@ -124,53 +124,9 @@ begin
 		
 		case state_next is
 			when waitr3 =>
-				if r(3)='1' then
-					g(3) <= '1';
-				elsif r(2)='1' then
-					g(2) <= '1';
-				elsif r(1)='1' then
-					g(1) <= '1';
-				elsif r(0)='1' then
-					g(0) <= '1';
-				else
-					g <= "0000";
-				end if ;
 			when waitr2 =>
-				if r(2)='1' then
-					g(2) <= '1';
-				elsif r(1)='1' then
-					g(1) <= '1';
-				elsif r(0)='1' then
-					g(0) <= '1';
-				elsif r(3)='1' then
-					g(3) <= '1';
-				else
-					g <= "0000";
-				end if ;
 			when waitr1 =>
-				if r(1)='1' then
-					g(1) <= '1';
-				elsif r(0)='1' then
-					g(0) <= '1';
-				elsif r(3)='1' then
-					g(3) <= '1';
-				elsif r(2)='1' then
-					g(2) <= '1';
-				else
-					g <= "0000";
-				end if ;
 			when waitr0 =>
-				if r(0)='1' then
-					g(0) <= '1';
-				elsif r(3)='1' then
-					g(3) <= '1';
-				elsif r(2)='1' then
-					g(2) <= '1';
-				elsif r(1)='1' then
-					g(1) <= '1';
-				else
-					g <= "0000";
-				end if ;
 			when grant3 =>
 				g(3) <= '1';
 			when grant2 =>
